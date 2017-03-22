@@ -1,5 +1,6 @@
 header {
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	font-family: PFranklinGothicCnd, Arial, sans-serif;
+	/*font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;*/
 	font-size: 40px;
 	font-style: normal;
 	font-variant: normal;
@@ -48,13 +49,11 @@ p {
   margin-right: auto;
   text-align: center;
   padding-bottom: 10em;
-	/*padding: 0.5em 0 0.5em 1em;*/
   font-family: Palatino;
 	font-size: 25px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: bold;
-
 }
 
 .copyright {
@@ -65,3 +64,15 @@ p {
 	font-variant: normal;
 	font-weight: 400;
 }
+
+a:link{
+	color:inherit}
+
+a:active{
+	color:inherit}
+
+a:visited{
+	color:inherit}
+
+a:hover{
+	color:inherit}
