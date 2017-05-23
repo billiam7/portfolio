@@ -1,51 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="portfolio.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <meta charset="utf-8">
-  <!-- /* <meta name="description" content="Front end developer, sales, consulting" */
-  /* <meta name="keywords" content="Front-end developement, developer, consulting, web development" */
-  /* <link rel="shortcut icon: type="image/ico" href="/a/favicon.cio" /> */ -->
-  <title>William Lapko's Portfolio</title>
-  <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <title>William Lapko Web Developer</title>
+  <!-- Lato Font -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+  <!-- Stylesheet -->
+  <link href="gallery-materialize.min.css" rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- font awesome icons  -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <div class="header">
-    <header>
-      <h1>William Lapko is a Web Developer</h1>
-    </header>
-  </div>
+  <!-- Navbar and Header -->
+  <nav class="nav-extended nav-full-header teal lighten-2">
+    <div class="nav-background">
+      <img class="active" src="http://placehold.it/1400x700" alt="cityscape">
+      <img src="http://placehold.it/1400x700" alt="cityscape">
+      <img src="http://placehold.it/1400x700" alt="cityscape">
+    </div>
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo"><i class="material-icons">camera</i>Gallery</a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Gallery</a></li>
+        <li><a href="index-dark.html">Dark Theme</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li class="active"><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Features<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <!-- Dropdown Structure -->
+      <ul id='feature-dropdown' class='dropdown-content'>
+        <li><a href="full-header.html">Fullscreen Header</a></li>
+        <li><a href="horizontal.html">Horizontal Style</a></li>
+        <li><a href="no-image.html">No Image Expand</a></li>
+      </ul>
 
-  <div class="profile">
+    </div>
+    <div class="nav-header valign-wrapper">
+      <div class="carousel carousel-slider center" data-indicators="true">
+        <div class="carousel-item white-text" href="#one!">
+          <div class="container valign-wrapper">
+            <h1>I MAKE THINGS</h1>
+            <div class="tagline">Portfolio</div>
+          </div>
+        </div>
+        <div class="carousel-item white-text" href="#two!">
+          <div class="container valign-wrapper">
+            <h1>PROFESSIONAL DESIGN</h1>
+            <div class="tagline">Dedicated to you</div>
+          </div>
+        </div>
+        <div class="carousel-item white-text" href="#three!">
+          <div class="container valign-wrapper">
+            <h1>LETS MAKE SOMETHING</h1>
+            <div class="tagline">together</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <img id="profile" src="billy114831.jpg" alt="Profile Pic"/>
-  </div>
-
-  <div class="bio">
-
-
-    <p>
-      Currently in progress...
-    </p>
-    <p>
-      Migas heirloom whatever, kickstarter 90's master cleanse swag bitters coloring book skateboard chia. Lyft tumblr vinyl street art pok pok. Wolf venmo hot chicken, lumbersexual pug lo-fi tbh edison bulb lomo dreamcatcher. Master cleanse fanny pack shabby chic deep v 3 wolf moon hammock. Tousled art party 8-bit bitters yuccie, pinterest everyday carry kickstarter freegan occupy subway tile. Man braid banh mi helvetica fixie. Banjo four loko shabby chic, try-hard meh truffaut dreamcatcher pabst.
-    </p>
-
-
-
-
-  </div>
+    <!-- Fixed Masonry Filters -->
+    <div class="categories-wrapper amber darken-3">
+      <div class="categories-container">
+        <ul class="categories container">
+          <li class="active"><a href="#all">All</a></li>
+          <li><a href="#polygon">Polygon</a></li>
+          <li><a href="#bigbang">Big Bang</a></li>
+          <li><a href="#sacred">Sacred Geometry</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <ul class="side-nav" id="nav-mobile">
+    <li><a href="index.html"><i class="material-icons">camera</i>Gallery</a></li>
+    <li><a href="index-dark.html"><i class="material-icons">brightness_3</i>Dark Theme</a></li>
+    <li><a href="blog.html"><i class="material-icons">edit</i>Blog</a></li>
+    <li><a href="docs.html"><i class="material-icons">school</i>Docs</a></li>
+    <li class="active"><a href="full-header.html"><i class="material-icons">fullscreen</i>Fullscreen Header</a></li>
+    <li><a href="horizontal.html"><i class="material-icons">swap_horiz</i>Horizontal Style</a></li>
+    <li><a href="no-image.html"><i class="material-icons">texture</i>No Image Expand</a></li>
+  </ul>
 
   <div class="portfolio">
 
@@ -81,11 +127,47 @@
     </div>
 
 
-    <footer>
-      <div class="copyright">
-        William Lapko &copy; 2017
-      </div>
-    </footer>
+    <footer class="page-footer">
+     <div class="container">
+       <div class="row">
+         <div class="col l6 s12">
+           <h5 class="white-text">Footer Content</h5>
+           <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+         </div>
+         <div class="col l4 offset-l2 s12">
+           <h5 class="white-text">Links</h5>
+           <ul>
+             <li><a href="https://www.linkedin.com/in/william-lapko-3bb31928">
+               <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a></li>
+             <li><a href="https://twitter.com/SirBilliam7">
+               <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+             </a></li>
+             <li><a href="mailto:wlapko@gmail.com">
+               <i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
+             </a></li>
+             <li><a href="tel:+16095585896">
+               <i class="fa fa-mobile fa-4x" aria-hidden="true"></i>
+             </a></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+     <div class="footer-copyright">
+       <div class="container">
+       &copy; 2017 William Lapko
+       <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+       </div>
+     </div>
+   </footer>
+
+    <!-- Core Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="js/color-thief.min.js"></script>
+    <script src="js/galleryExpand.js"></script>
+    <script src="js/init.js"></script>
 
   </body>
 
